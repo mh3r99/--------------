@@ -1,0 +1,40 @@
+.my-orders {
+  margin-top: 104px;
+  margin-bottom: 46px;
+  .orders__info {
+    padding: 36px 62px;
+    width: 100%;
+    min-height: 500px;
+    background: #fafaff;
+    border-radius: 10px;
+    .title {
+      font-weight: bold;
+      font-size: 30px;
+      color: #000000;
+    }
+    .links {
+      margin-top: 59px;
+      .my {
+        font-weight: bold;
+        font-size: 25px;
+        color: #000000;
+        text-decoration: none;
+        &--active {
+          font-weight: normal;
+          color: #1976d2;
+        }
+      }
+      .basket {
+        &--active {
+          color: #ff2727;
+          font-weight: normal;
+        }
+        margin-left: 29px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+}

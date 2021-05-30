@@ -1,0 +1,36 @@
+.repairs__slider {
+  padding: 71px 0 62px;
+  .btn-update {
+    margin: 0;
+    margin-left: 63px;
+    margin-bottom: 49px;
+  }
+  .slider__inner {
+    max-width: 1110px;
+    margin: 0 auto;
+    div img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    outline: none;
+    background: transparent;
+    img {
+      width: 22px;
+    }
+  }
+  .slick-prev {
+    left: -70px;
+  }
+  .slick-next {
+    right: -70px;
+    left: auto;
+  }
+}

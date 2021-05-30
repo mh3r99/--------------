@@ -1,0 +1,23 @@
+.pay-services {
+  .item-1,
+  .item-2,
+  .item-3 {
+    padding: 36px 65px;
+    margin-top: 104px;
+    margin-bottom: 65px;
+    width: 100%;
+    min-height: 235px;
+    background: #fafaff;
+    border-radius: 10px;
+    .title {
+      font-weight: bold;
+      font-size: 30px;
+      color: #000000;
+    }
+    .text {
+      font-size: 30px;
+      line-height: 34px;
+      color: #000000;
+    }
+  }
+}

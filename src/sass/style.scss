@@ -1,0 +1,66 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/slick";
+
+* {
+  font-family: Arial, sans-serif;
+  // outline: 2px solid red;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+.container-big {
+  max-width: 1784px;
+  margin: 0 auto;
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+.adv__img2 {
+  margin-top: 796px;
+}
+.adv__img1,
+.adv__img2 {
+  max-width: 269px;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/dropdown-blocks";
+@import "blocks/repairs-slider";
+@import "blocks/categories";
+@import "blocks/main";
+@import "blocks/orders";
+@import "blocks/service";
+@import "blocks/performers";
+
+@import "blocks/orders-item";
+@import "blocks/score-page";
+@import "blocks/my-orders";
+@import "blocks/author__orders";
+@import "blocks/profile";
+@import "blocks/pay-services__item";
+@import "blocks/message-page";
+@import "blocks/messages";
+@import "blocks/help";
+@import "blocks/services";
+@import "blocks/new__offer";
+@import "blocks/my__offer";
+@import "blocks/announcement";
+
+@import "blocks/authorization";
+@import "blocks/registration";
+@import "blocks/password-recovery";
+@import "blocks/footer";
+// MEDIA
+@import "base/media";

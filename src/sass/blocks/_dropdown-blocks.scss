@@ -1,0 +1,228 @@
+// Region-block
+.region-block {
+  padding: 24px 19px 24px 30px;
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 20px);
+  left: -23px;
+  width: 534px;
+  height: 596px;
+  background: #ffffff;
+  box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow-y: scroll;
+  &--active {
+    display: block;
+  }
+  .region__cities {
+    display: none;
+  }
+  .region__wrapper,
+  .cities__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .left__region,
+  .right__region,
+  .left__city,
+  .right__city {
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 20px;
+      width: 220px;
+      height: 28px;
+      background: #e7e7e7;
+      border-radius: 4px;
+      text-align: center;
+      list-style: none;
+      &:hover {
+        a {
+          color: #6154fc;
+        }
+      }
+      a {
+        font-size: 18px;
+        line-height: 30px;
+        color: #5c5c5c;
+        text-decoration: none;
+      }
+      .region__item--active {
+        color: #6154fc;
+      }
+    }
+  }
+}
+
+// City-block
+.city-block {
+  padding: 24px 19px 24px 30px;
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 92px;
+  left: 0px;
+  width: 534px;
+  height: 596px;
+  background: #ffffff;
+  box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow-y: scroll;
+  &--active {
+    display: block;
+  }
+
+  .city__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .left__city,
+  .right__city {
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 20px;
+      width: 220px;
+      height: 28px;
+      background: #e7e7e7;
+      border-radius: 4px;
+      text-align: center;
+      list-style: none;
+      &:hover {
+        a {
+          color: #6154fc;
+        }
+      }
+      a {
+        font-size: 18px;
+        line-height: 30px;
+        color: #5c5c5c;
+        text-decoration: none;
+      }
+      .city__item--active {
+        color: #6154fc;
+      }
+    }
+  }
+}
+
+// Specialization-block
+.specialization-block {
+  display: none;
+  padding: 24px 19px 24px 30px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: calc(100% + 20px);
+  width: 450px;
+  height: 596px;
+  background: #ffffff;
+  box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow-y: scroll;
+
+  &--active {
+    display: block;
+  }
+  .specialization-list {
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      width: 100%;
+      min-height: 28px;
+      background: #e7e7e7;
+      border-radius: 4px;
+      text-align: left;
+      list-style: none;
+      &:hover {
+        a {
+          color: #6154fc;
+        }
+      }
+      a {
+        font-size: 18px;
+        color: #5c5c5c;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Avatar dropdown
+.avatar__dropdown {
+  margin-left: auto;
+  .select {
+    margin: 0;
+    padding-right: 25px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../icons/down.svg") center center/cover no-repeat;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 8px;
+    }
+  }
+  .down-links {
+    margin-top: 5px;
+    display: none;
+    flex-direction: column;
+    &--active {
+      display: flex;
+    }
+    a {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #000000;
+    }
+  }
+}
+
+// Complaints  dropdown
+.list-dropdown {
+  display: none;
+  padding-left: 25px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .article {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+  }
+  .article__text {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1976d2;
+  }
+  .category {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+  }
+  .category__text {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #000000;
+  }
+  &--active {
+    display: block;
+  }
+}

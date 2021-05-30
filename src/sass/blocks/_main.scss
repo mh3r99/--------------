@@ -1,0 +1,108 @@
+.main {
+  padding: 66px 0 136px;
+  &__header {
+    max-width: 804px;
+    margin: 0 auto;
+  }
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      padding: 10px 19px 9px 16px;
+      max-height: 43px;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 24px;
+      color: #000;
+      &:hover {
+        color: #000;
+        text-decoration: none;
+      }
+      &--active {
+        color: #fff;
+        background: #1976d2;
+        border-radius: 4px;
+        position: relative;
+        &:hover {
+          color: #fff;
+        }
+        &::before {
+          position: absolute;
+          top: 100%;
+          right: 20px;
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 12px solid #1976d2;
+        }
+      }
+    }
+  }
+  &__links {
+    &--active {
+      display: flex;
+    }
+    margin-top: 30px;
+    padding-left: 51px;
+    display: none;
+    &-item {
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 24px;
+      color: #1976d2;
+      position: relative;
+      &:hover {
+        text-decoration: none;
+        color: #1976d2;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-left: 37px;
+        &::before {
+          position: absolute;
+          left: -16px;
+          content: "/";
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 1110px;
+    margin: 0 68px;
+  }
+  &__title {
+    margin-bottom: 23px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+  }
+  &__count {
+    margin-left: 40px;
+    font-size: 35px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.66);
+  }
+  &__content-item {
+    display: none;
+    margin-top: 23px;
+    &--active {
+      display: block;
+    }
+  }
+}
+.main__more {
+  display: block;
+  margin: auto;
+  margin-top: 136px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+}

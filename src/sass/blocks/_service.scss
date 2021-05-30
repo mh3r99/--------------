@@ -1,0 +1,125 @@
+.service {
+  margin-bottom: 62px;
+  padding: 19px 19px 21px 21px;
+  display: flex;
+  max-width: 1110px;
+  min-height: 287px;
+  background: #f9faff;
+  border: 1px solid rgba(196, 196, 196, 0.27);
+  border-radius: 4px;
+  position: relative;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &-adv {
+    background: rgba(255, 199, 0, 0.8);
+    .order__link {
+      padding: 8px 25px;
+      background: #0e0e0e;
+      &::before {
+        content: "";
+        background: none;
+      }
+    }
+    .service__descr {
+      margin-top: 22px;
+      width: 493px;
+    }
+    .service__footer {
+      margin: 0;
+      margin-top: auto;
+    }
+    .service__date {
+      color: #000;
+    }
+  }
+  &__img {
+    max-width: 247px;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    .order__img-2 {
+      display: none;
+    }
+  }
+  &__info {
+    max-width: 755px;
+    margin-left: 69px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    color: #000000;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  &__link {
+    margin-left: 184px;
+    padding: 8px 36px 8px 14px;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 26px;
+    color: #fff;
+    background: #1976d2;
+    position: relative;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      right: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../icons/link_arrow.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &__addr {
+    display: block;
+    margin-top: 10px;
+    font-size: 21px;
+    line-height: 21px;
+    color: #1976d2;
+  }
+  &__descr {
+    margin-top: 10px;
+    max-width: 699px;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+  }
+  &__footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__date {
+    font-size: 20px;
+    color: #a1a1a1;
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 35px;
+    color: #ffa800;
+  }
+  &__mobile-adv {
+    display: none;
+  }
+}

@@ -1,0 +1,185 @@
+.header {
+  // position: fixed;
+  // width: 100%;
+  // z-index: 5;
+  padding: 33px 0 34px;
+  background: #b1f389;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  &__logo {
+    display: block;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+  }
+  .user__info {
+    display: flex;
+    justify-content: space-between;
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    &-link {
+      margin-right: 80px;
+      font-size: 20px;
+      color: #000000;
+      position: relative;
+      &:last-of-type {
+        margin-right: 63px;
+      }
+      &:hover {
+        color: #000000;
+        text-decoration: none;
+      }
+      &-1::before {
+        position: absolute;
+        content: url("../icons/message.svg");
+        left: -32px;
+        top: 0;
+      }
+      &-2::before {
+        position: absolute;
+        content: url("../icons/basket.svg");
+        left: -32px;
+        top: 0;
+      }
+      &-3::before {
+        position: absolute;
+        content: url("../icons/price_count.svg");
+        left: -32px;
+        top: 0;
+      }
+      &-1 {
+        .bracket {
+          color: #ff2727;
+          span {
+            color: #fff;
+          }
+        }
+      }
+      &-3 {
+        .score {
+          color: #ff2727;
+        }
+      }
+    }
+
+    &-name {
+      font-size: 20px;
+      color: #1976d2;
+      text-decoration: none;
+    }
+  }
+  .user__btn {
+    display: none;
+    background: transparent;
+    border: none;
+    img {
+      display: block;
+      max-width: 100%;
+      min-width: 20px;
+    }
+  }
+  .user_block {
+    &--active {
+      display: block;
+    }
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 33px);
+    z-index: 9;
+    padding: 25px 15px;
+    width: 386px;
+    height: 332px;
+    background: #ffffff;
+    border-radius: 5px;
+    .block__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      a {
+        display: block;
+        font-size: 25px;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+        &.active {
+          font-weight: bold;
+
+          color: #fff;
+          background: #1976d2;
+          border-radius: 4px;
+        }
+        &:first-of-type {
+          position: relative;
+          &::after {
+            content: "|";
+            color: #000000;
+            font-weight: normal;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -21px;
+          }
+        }
+      }
+      .customer {
+        padding: 3px 24px;
+      }
+      .executor {
+        padding: 3px 4px;
+      }
+    }
+    .profile__link {
+      display: block;
+      margin-top: 20px;
+      font-size: 25px;
+      color: #000000;
+      text-decoration: none;
+    }
+    .score__link {
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 25px;
+      color: #28b446;
+      a {
+        margin-left: auto;
+        font-weight: bold;
+        font-size: 22px;
+        color: #1976d2;
+        text-decoration: underline;
+      }
+    }
+    .my-orders__Link,
+    .message__link {
+      display: none;
+    }
+    .logout {
+      display: block;
+      margin-top: 20px;
+      font-size: 25px;
+      color: #ff2727;
+      text-decoration: none;
+    }
+  }
+}

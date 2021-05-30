@@ -1,0 +1,123 @@
+.categories {
+  padding: 18px 0;
+  height: 78px;
+  background: #e5f8ce;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__title {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #000000;
+  }
+
+  .filter-region {
+    margin-left: 43px;
+    position: relative;
+    &_link {
+      width: 212px;
+      height: 42px;
+      display: block;
+      padding: 11px 37px 11px 19px;
+      background: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 21px;
+      line-height: 22px;
+      color: #000000;
+      text-decoration: none;
+      position: relative;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      &::after {
+        content: url(../icons/down.svg);
+        position: absolute;
+        top: 25%;
+        right: 9px;
+      }
+    }
+  }
+
+  .top__region {
+    display: block;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 37px;
+    padding: 0;
+    text-align: center;
+    li {
+      margin-bottom: 16px;
+      height: 27px;
+      top: 67px;
+      background: #e7e7e7;
+      border-radius: 4px;
+      list-style: none;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 18px;
+        text-decoration: none;
+      }
+      .other__region {
+        color: #5c5c5c;
+        &:hover {
+          color: #1976d2;
+        }
+      }
+      .this__region {
+        color: #1976d2;
+      }
+    }
+  }
+  .filter-specialization {
+    margin-left: 64px;
+    position: relative;
+    &_link {
+      width: 212px;
+      height: 42px;
+      display: block;
+      padding: 11px 32px;
+      background: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 21px;
+      line-height: 22px;
+      color: #000000;
+      text-decoration: none;
+      position: relative;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      &::after {
+        content: url(../icons/down.svg);
+        position: absolute;
+        top: 25%;
+        right: 9px;
+      }
+    }
+  }
+  .filter-search_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .filter__search {
+    padding: 0 14px;
+    margin-left: 60px;
+    width: 410px;
+    height: 42px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px 0px 0px 4px;
+  }
+  .filter__search::placeholder {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

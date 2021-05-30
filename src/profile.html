@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo">
+            <img src="icons/logo.png" alt="logo" />
+          </a>
+          <div class="user__info">
+            <ul class="user__info-list">
+              <li>
+                <a
+                  class="user__info-link user__info-link-1"
+                  href="messages.html"
+                  >Сообщение <span class="bracket">(<span>12</span>)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="user__info-link user__info-link-2"
+                  href="my-orders.html"
+                  >Мои заказы</a
+                >
+              </li>
+              <li>
+                <a
+                  class="user__info-link user__info-link-3"
+                  href="score-page.html"
+                  >На счету - <span class="score">0</span> руб</a
+                >
+              </li>
+              <li><a class="user__info-name" href="">Дмитрий </a></li>
+            </ul>
+          </div>
+
+          <div class="user_block">
+            <div class="block__links">
+              <a href="#" class="customer"> Заказчик</a>
+              <a href="#" class="executor active">Исполнитель</a>
+            </div>
+            <a href="#" class="profile__link">Профиль</a>
+            <div class="score__link">
+              На счёту - <span>0</span> руб <a href="">пополнит</a>
+            </div>
+            <a href="my-orders.html" class="my-orders__Link">Мои заказы</a>
+            <a href="" class="message__link">Сообщение</a>
+
+            <a href="#" class="logout">Выйти</a>
+          </div>
+
+          <button class="user__btn">
+            <img src="icons/user_icon.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--Profile -->
+    <section class="profile">
+      <p class="profile__title">Профиль</p>
+      <div class="author__about">
+        <div class="author__img">
+          <img src="img/message__profile.jpg" alt="" />
+        </div>
+
+        <div class="block-1">
+          <p class="name">Ярослав Иванюк</p>
+          <p class="city">Московская область / Москва</p>
+          <p class="date">Сейчас на сайте <span>21 октября 2021</span></p>
+          <div class="status">
+            <select>
+              <option>Занят</option>
+              <option>Свободен</option>
+              <option>Отсутствует</option>
+              <option selected>Без статуса</option>
+            </select>
+            <a href="#">изменить</a>
+          </div>
+          <a href="#" class="portfolio__link"
+            >Отправить ссылку на своё портфолио</a
+          >
+        </div>
+        <div class="block-2">
+          <p class="raiting">Рейтинг: <span>0</span></p>
+          <p class="site">На сайте: <span> 7 лет 7 месяцев</span></p>
+          <p class="reviews">Отзывы: <span> +0 0 -0</span></p>
+          <div class="specialization">
+            <p class="title">
+              Специализация: <a class="change__spec-link" href="#">изменить</a>
+            </p>
+            <p class="subtitle">IT другое</p>
+          </div>
+          <div class="phone__info">
+            <p class="title">Контактная информация:</p>
+            <p><a href="#" class="phone">+7(91) 78 987 45</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="profile__main">
+      <div class="tabs profile__tabs">
+        <a href="#works" class="tab profile__tabs-item tab--active"
+          >Мои Работы</a
+        >
+        <a href="#suggestions" class="tab profile__tabs-item">Предложение</a>
+        <a href="#reviews" class="tab profile__tabs-item">Отзывы</a>
+        <a href="#complaints" class="tab profile__tabs-item">Жалобы</a>
+        <a href="#questions" class="tab profile__tabs-item">Вопросы</a>
+        <a href="#archive" class="tab profile__tabs-item">Архив</a>
+        <a href="#favorite" class="tab profile__tabs-item">Избранные</a>
+        <a href="#settings" class="tab profile__tabs-item">Настройки профиля</a>
+        <a href="#logout" class="tab profile__tabs-item">Выход</a>
+      </div>
+      <div class="profile-tabs__content tabs-container">
+        <div
+          id="works"
+          class="tabs-content profile-tabs__content-item tabs-content--active"
+        >
+          <div class="profile__works">
+            <div class="works__header">
+              <div class="info">
+                <p class="title">О себе</p>
+                <a href="#" class="change__info"> Изменить информацию</a>
+              </div>
+              <button class="add-work__btn">Добавить работу</button>
+            </div>
+            <div class="change__info-box">
+              <textarea class="change-area"></textarea>
+              <div class="change-buttons">
+                <button class="save__btn">Сохранить</button>
+                <button class="cancel__btn">Отмена</button>
+              </div>
+            </div>
+          </div>
+          <div class="add-work-box">
+            <p class="title">Добавить работу</p>
+            <form class="form-box">
+              <div class="titles">
+                <p class="left__title">Новая работа</p>
+                <p class="right__title">Инструкция</p>
+              </div>
+              <div class="section">
+                <div class="left">
+                  <p>Выберите раздел:</p>
+                  <input type="text" />
+                </div>
+                <div class="right">
+                  1. Выберите раздел касающийся работы, которую Вы хотите
+                  добавить.
+                </div>
+              </div>
+              <div class="name">
+                <div class="left">
+                  <p>Название:</p>
+                  <input type="text" />
+                </div>
+                <div class="right">
+                  2. Дайте ей название понятное пользователям.
+                </div>
+              </div>
+              <div class="cost">
+                <div class="left">
+                  <p>Стоимость работы</p>
+                  <input type="text" /> <span>в рублях</span>
+                </div>
+                <div class="right">3.Укажите "Стоимость работы"</div>
+              </div>
+              <div class="t-spent">
+                <div class="left">
+                  <p>Временные затраты</p>
+                  <input type="text" />
+                  <select>
+                    <option value="">часов</option>
+                  </select>
+                </div>
+                <div class="right">4. Укажите "Временные затраты"</div>
+              </div>
+              <div class="descr">
+                <div class="left">
+                  <p>Описание:</p>
+                  <textarea></textarea>
+                </div>
+                <div class="right">5. Добавьте описание к Вашей работе.</div>
+              </div>
+              <div class="photos">
+                <div class="left">
+                  <p>Фотографии</p>
+                  <label for="photos">Choose file</label>
+                  <input id="photos" style="visibility: hidden" type="file" />
+                </div>
+                <div class="right">6. Загрузите фотографии, если есть.</div>
+              </div>
+              <div class="files">
+                <div class="left">
+                  <p>Фотографии</p>
+                  <label for="files">Choose file</label>
+                  <input id="files" style="visibility: hidden" type="file" />
+                </div>
+                <div class="right">
+                  7. Добавьте вложенный файл, если прилагается.
+                </div>
+              </div>
+              <div class="buttons">
+                <div class="left">
+                  <button class="add">Добавить работу</button>
+                  <button class="cancel">Отмена</button>
+                </div>
+                <div class="right">
+                  8. Для добавления нажмите "Добавить работу.
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="change-specialization-box">
+            <p class="title">Ваша специализация</p>
+            <p class="main__spec">
+              Основная специализация: <a href="#">изменить</a>
+            </p>
+            <div class="main__spec-form">
+              <div class="legal__services">
+                <div class="box">
+                  <p class="title">Юридические услуги</p>
+                  <label>
+                    <input type="radio" name="legal-1" />
+                    Регистрация фирм
+                  </label>
+                  <label>
+                    <input type="radio" name="legal-1" />
+                    Консультации
+                  </label>
+                  <label>
+                    <input type="radio" name="legal-1" />
+                    Представительство в суде
+                  </label>
+                </div>
+                <div class="box">
+                  <p class="title">Юридические услуги</p>
+                  <label>
+                    <input type="radio" name="legal-2" />
+                    Регистрация фирм
+                  </label>
+                  <label>
+                    <input type="radio" name="legal-2" />
+                    Консультации
+                  </label>
+                  <label>
+                    <input type="radio" name="legal-2" />
+                    Представительство в суде
+                  </label>
+                </div>
+                <div class="box">
+                  <p class="title">Юридические услуги</p>
+                  <label>
+                    <input type="radio" name="legal-3" />
+                    Регистрация фирм
+                  </label>
+                  <label>
+                    <input type="radio" name="legal-3" />
+                    Консультации
+                  </label>
+                  <label>
+                    <input type="radio" name="legal-3" />
+                    Представительство в суде
+                  </label>
+                </div>
+              </div>
+              <div class="domestic__services">
+                <div class="box">
+                  <p class="title">Бытовые услуги</p>
+                  <label>
+                    <input type="radio" name="domestic-1" />
+                    Домработница
+                  </label>
+                  <label>
+                    <input type="radio" name="domestic-1" />
+                    Изготовление ключей
+                  </label>
+                  <label>
+                    <input type="radio" name="domestic-1" />
+                    Мелкий бытовой ремонт
+                  </label>
+                </div>
+                <div class="box">
+                  <p class="title">Бытовые услуги</p>
+                  <label>
+                    <input type="radio" name="domestic-2" />
+                    Домработница
+                  </label>
+                  <label>
+                    <input type="radio" name="domestic-2" />
+                    Изготовление ключей
+                  </label>
+                  <label>
+                    <input type="radio" name="domestic-2" />
+                    Мелкий бытовой ремонт
+                  </label>
+                </div>
+                <div class="box">
+                  <p class="title">Бытовые услуги</p>
+                  <label>
+                    <input type="radio" name="domestic-3" />
+                    Домработница
+                  </label>
+                  <label>
+                    <input type="radio" name="domestic-3" />
+                    Изготовление ключей
+                  </label>
+                  <label>
+                    <input type="radio" name="domestic-3" />
+                    Мелкий бытовой ремонт
+                  </label>
+                </div>
+              </div>
+              <div class="advertising__printing">
+                <div class="box">
+                  <p class="title">Реклама и полиграфия</p>
+                  <label>
+                    <input type="radio" name="adv-1" />
+                    Обработка в фотошоп
+                  </label>
+                  <label>
+                    <input type="radio" name="adv-1" />
+                    Создание макетов для печати
+                  </label>
+                  <label>
+                    <input type="radio" name="adv-1" />
+                    Верстка и подготовка к печати
+                  </label>
+                </div>
+                <div class="box">
+                  <p class="title">Реклама и полиграфия</p>
+                  <label>
+                    <input type="radio" name="adv-2" />
+                    Обработка в фотошоп
+                  </label>
+                  <label>
+                    <input type="radio" name="adv-2" />
+                    Создание макетов для печати
+                  </label>
+                  <label>
+                    <input type="radio" name="adv-2" />
+                    Верстка и подготовка к печати
+                  </label>
+                </div>
+                <div class="box">
+                  <p class="title">Реклама и полиграфия</p>
+                  <label>
+                    <input type="radio" name="adv-3" />
+                    Обработка в фотошоп
+                  </label>
+                  <label>
+                    <input type="radio" name="adv-3" />
+                    Создание макетов для печати
+                  </label>
+                  <label>
+                    <input type="radio" name="adv-3" />
+                    Верстка и подготовка к печати
+                  </label>
+                </div>
+              </div>
+            </div>
+            <p class="add__spec">
+              Дополнительные специализации: <span>Нет</span
+              ><a href="#">изменить</a>
+            </p>
+            <button class="save__changes-btn">Сохраните изменения</button>
+          </div>
+        </div>
+        <div id="suggestions" class="tabs-content profile-tabs__content-item">
+          <div class="profile__suggestions">
+            <div class="title">Предложения не найдены</div>
+          </div>
+        </div>
+        <div id="reviews" class="tabs-content profile-tabs__content-item">
+          <div class="reviews-box">
+            <div class="reviews-list">
+              <div class="left-reviews">
+                Отзывы работодателей:
+                <span class="red"> +0 <span>0</span> -0</span>
+              </div>
+              <div class="right-reviews">
+                Отзывы исполнителя:
+                <span class="red"> +0 <span>0</span> -0</span>
+              </div>
+            </div>
+            <p class="reviews-count">Отзывы не найдены</p>
+          </div>
+        </div>
+        <div id="complaints" class="tabs-content profile-tabs__content-item">
+          <div class="complaints-box">
+            <div class="complaints-title">
+              <p class="author">Автор</p>
+              <p class="complaint">Жалоба</p>
+              <p class="article">Статью</p>
+              <p class="category">Категория</p>
+            </div>
+            <div class="complaints-list">
+              <ul>
+                <li class="list-item">
+                  <span class="count">1</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Цена неверная </span>
+                </li>
+                <li class="list-item">
+                  <a href="#">test.bizznesstroykaacsavmas</a>
+                </li>
+                <li class="list-item">
+                  Ремонт, установка и обслуживание техники
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">2</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Мошенник</span>
+                </li>
+                <li class="list-item">
+                  <a href="#">test.bizznesstroykaacsavmas</a>
+                </li>
+                <li class="list-item">
+                  Ремонт, установка и обслуживание техники
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">3</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Не дозвониться </span>
+                </li>
+                <li class="list-item">
+                  <a href="#">test.bizznesstroykaacsavmas</a>
+                </li>
+                <li class="list-item">
+                  Ремонт, установка и обслуживание техники
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">4</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Не смог дозвониться </span>
+                </li>
+                <li class="list-item">
+                  <a href="#">test.bizznesstroykaacsavmas</a>
+                </li>
+                <li class="list-item">
+                  Ремонт, установка и обслуживание техники
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">5</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info"> Цена неверная </span>
+                </li>
+                <li class="list-item">
+                  <a href="#">test.bizznesstroykaacsavmas</a>
+                </li>
+                <li class="list-item">
+                  Ремонт, установка и обслуживание техники
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="complaints-box-mobile">
+            <div class="complaints-title">
+              <p class="author">Автор</p>
+              <p class="complaint">Жалоба</p>
+            </div>
+            <div class="complaints-list">
+              <ul>
+                <li class="list-item">
+                  <span class="count">1</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Цена неверная </span>
+                </li>
+                <div class="list-dropdown">
+                  <p class="article">Статью</p>
+                  <a href="#" class="article__text"
+                    >test.bizznesstroykaacsavmas</a
+                  >
+                  <p class="category">Категория</p>
+                  <p class="category__text">
+                    Ремонт, установка и обслуживание техники
+                  </p>
+                </div>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">2</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Мошенник </span>
+                </li>
+                <div class="list-dropdown">
+                  <p class="article">Статью</p>
+                  <a href="#" class="article__text"
+                    >test.bizznesstroykaacsavmas</a
+                  >
+                  <p class="category">Категория</p>
+                  <p class="category__text">
+                    Ремонт, установка и обслуживание техники
+                  </p>
+                </div>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">3</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Не дозвониться </span>
+                </li>
+                <div class="list-dropdown">
+                  <p class="article">Статью</p>
+                  <a href="#" class="article__text"
+                    >test.bizznesstroykaacsavmas</a
+                  >
+                  <p class="category">Категория</p>
+                  <p class="category__text">
+                    Ремонт, установка и обслуживание техники
+                  </p>
+                </div>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">4</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Не смог дозвониться</span>
+                </li>
+                <div class="list-dropdown">
+                  <p class="article">Статью</p>
+                  <a href="#" class="article__text"
+                    >test.bizznesstroykaacsavmas</a
+                  >
+                  <p class="category">Категория</p>
+                  <p class="category__text">
+                    Ремонт, установка и обслуживание техники
+                  </p>
+                </div>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <span class="count">5</span>
+                  <a href="#" class="name">Дмитрий</a>
+                  <span class="info">Цена неверная </span>
+                </li>
+                <div class="list-dropdown">
+                  <p class="article">Статью</p>
+                  <a href="#" class="article__text"
+                    >test.bizznesstroykaacsavmas</a
+                  >
+                  <p class="category">Категория</p>
+                  <p class="category__text">
+                    Ремонт, установка и обслуживание техники
+                  </p>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="questions" class="tabs-content profile-tabs__content-item">
+          <div class="questions__tabs">
+            <a
+              href="#"
+              class="questions__tabs-item questions__tabs-item--active"
+              >Мои ответы
+            </a>
+            <a href="#" class="questions__tabs-item">Мои вопросы</a>
+            <a href="#" class="questions__tabs-item"
+              >Всего ответов <span>0</span>
+            </a>
+            <a href="#" class="questions__tabs-item">Лучших ответов</a>
+          </div>
+        </div>
+        <div id="archive" class="tabs-content profile-tabs__content-item">
+          <div class="archive__inner">
+            <p class="title">Название</p>
+            <p class="title">Дата создания</p>
+            <p class="title">Дата окончания</p>
+            <p class="title">Описание</p>
+          </div>
+        </div>
+        <div id="favorite" class="tabs-content profile-tabs__content-item">
+          <div class="favorite__items">
+            <p class="title">Избранные <span>3</span></p>
+            <div class="author__about">
+              <div class="author__img">
+                <img src="img/message__profile.jpg" alt="" />
+                <button class="send-message">Написать сообщение</button>
+              </div>
+
+              <div class="block-1">
+                <p class="name">Ярослав Иванюк</p>
+                <p class="city">Московская область / Москва</p>
+                <p class="date date--active">
+                  Сейчас на сайте<span>21 октября 2021</span>
+                </p>
+                <a href="#" class="favorite"> Удалить из избранных</a>
+              </div>
+              <div class="block-2">
+                <p class="raiting">Рейтинг: <span>0</span></p>
+                <p class="site">На сайте: <span> 7 лет 7 месяцев</span></p>
+                <p class="reviews">Отзывы: <span> +0 0 -0</span></p>
+                <div class="specialization">
+                  <p class="title">Специализация:</p>
+                  <p class="subtitle">IT другое</p>
+                </div>
+                <div class="phone__info">
+                  <p class="title">Контактная информация:</p>
+                  <p><a href="#" class="phone">+7(91) 78 987 45</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="author__about">
+              <div class="author__img">
+                <img src="img/message__profile.jpg" alt="" />
+                <button class="send-message">Написать сообщение</button>
+              </div>
+
+              <div class="block-1">
+                <p class="name">Ярослав Иванюк</p>
+                <p class="city">Московская область / Москва</p>
+                <p class="date date--active">
+                  Сейчас на сайте<span>21 октября 2021</span>
+                </p>
+                <a href="#" class="favorite"> Удалить из избранных</a>
+              </div>
+              <div class="block-2">
+                <p class="raiting">Рейтинг: <span>0</span></p>
+                <p class="site">На сайте: <span> 7 лет 7 месяцев</span></p>
+                <p class="reviews">Отзывы: <span> +0 0 -0</span></p>
+                <div class="specialization">
+                  <p class="title">Специализация:</p>
+                  <p class="subtitle">IT другое</p>
+                </div>
+                <div class="phone__info">
+                  <p class="title">Контактная информация:</p>
+                  <p><a href="#" class="phone">+7(91) 78 987 45</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="author__about">
+              <div class="author__img">
+                <img src="img/message__profile.jpg" alt="" />
+                <button class="send-message">Написать сообщение</button>
+              </div>
+
+              <div class="block-1">
+                <p class="name">Ярослав Иванюк</p>
+                <p class="city">Московская область / Москва</p>
+                <p class="date date--active">
+                  Сейчас на сайте<span>21 октября 2021</span>
+                </p>
+                <a href="#" class="favorite"> Удалить из избранных</a>
+              </div>
+              <div class="block-2">
+                <p class="raiting">Рейтинг: <span>0</span></p>
+                <p class="site">На сайте: <span> 7 лет 7 месяцев</span></p>
+                <p class="reviews">Отзывы: <span> +0 0 -0</span></p>
+                <div class="specialization">
+                  <p class="title">Специализация:</p>
+                  <p class="subtitle">IT другое</p>
+                </div>
+                <div class="phone__info">
+                  <p class="title">Контактная информация:</p>
+                  <p><a href="#" class="phone">+7(91) 78 987 45</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="settings"
+          class="tabs-content profile-tabs__content-item tabs-content--active"
+        >
+          <div class="settings__inner">
+            <div class="settings__tabs">
+              <a
+                href="#personal"
+                class="settings__tabs-item settings__tabs-item--active"
+                >Персональные данные</a
+              ><a href="#contacts" class="settings__tabs-item">Контакты</a
+              ><a href="#myphoto" class="settings__tabs-item">Моё фото</a
+              ><a href="#notifications" class="settings__tabs-item"
+                >Уведомления / Рассылка</a
+              >
+              <a href="#login" class="settings__tabs-item">Настройки входа</a>
+            </div>
+            <div class="settings-tabs__content">
+              <div
+                id="personal"
+                class="settings-tabs__content-item settings-tabs__content-item--active"
+              >
+                <div class="personal__settings">
+                  <p class="title">Персональные данные</p>
+                  <form class="personal-form">
+                    <div class="box">
+                      <div class="login">
+                        <label for="">Логин:</label>
+                        <input type="text" />
+                      </div>
+                      <div class="gender">
+                        <label>Пол:</label>
+                        <div class="radio-box">
+                          <label>
+                            <input type="radio" name="gender" required />Мужчина
+                          </label>
+                          <label>
+                            <input
+                              type="radio"
+                              name="gender"
+                              required
+                            />Женщина</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="city">
+                        <label for="">Ваш город:</label>
+                        <input type="text" />
+                      </div>
+
+                      <div class="street">
+                        <label for="">Улица:</label>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="name">
+                        <label for="">Имя:</label>
+                        <input type="text" />
+                      </div>
+
+                      <div class="surname">
+                        <label for="">Фамилия:</label>
+                        <input type="text" />
+                      </div>
+                      <div class="patronymic">
+                        <label for="">Отчество:</label>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <button class="save__changes__btn">
+                      Сохраните изменения
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer-item">
+          <p class="footer-item__title">Дмитрий</p>
+          <ul class="footer-list">
+            <li class="footer-list__link">
+              <a href="#">Мои заказы</a>
+            </li>
+            <li class="footer-list__link">
+              <a href="#">Сообщения</a>
+            </li>
+            <li class="footer-list__link"><a href="#">Мой счет</a></li>
+            <li class="footer-list__link"><a href="#">Настройки</a></li>
+            <li class="footer-list__link"><a href="#">Выйти</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <p class="footer-item__title">О проекте</p>
+          <ul class="footer-list">
+            <li class="footer-list__link">
+              <a href="#">Для кого этот сайт</a>
+            </li>
+            <li class="footer-list__link">
+              <a href="#">Сообщить об ошибке</a>
+            </li>
+            <li class="footer-list__link"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <p class="footer-item__title">Заказы</p>
+          <ul class="footer-list">
+            <li class="footer-list__link"><a href="#">Разместить заказ</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <p class="footer-item__title">Сервисы</p>
+          <ul class="footer-list">
+            <li class="footer-list__link"><a href="#">Для заказчиков</a></li>
+            <li class="footer-list__link"><a href="#">Для исполнителей</a></li>
+            <li class="footer-list__link"><a href="#">Способы оплаты</a></li>
+            <li class="footer-list__link"><a href="#">Реклама</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
